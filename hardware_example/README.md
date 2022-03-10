@@ -2,7 +2,7 @@ This is the code of the application flashed on the STM32-NucleoF401RE board (exp
 X-NUCLEO-IDW01M1 Wi-Fi Module). 
 
 <p align="right">
-<a href=""> <img width="650"  src="imgs/hw.png"> </a>
+<a href=""> <img width="350"  src="imgs/hw.png"> </a>
 </p>
 
 
