@@ -5,8 +5,8 @@ X-NUCLEO-IDW01M1 Wi-Fi Module).
 The application has been compiled using [this online IDE](https://ide.mbed.com/compiler) which automatically selects the compilation toolchain (and therefore, all the linked libraries) to eventually generate the monolithic firmware image.
 
 To reproduce:
-
-1. Modify the source code of the firmware (fw-code/main.cpp) to connect to your router (THERE IS NO SUPPORT FOR 5G AFAIK) and compile.
+> :warning: There is no support for connections to 5G router using this WiFi board (or, at least, I couldn't make it work)
+1. Modify the source code of the firmware (fw-code/main.cpp) to connect to your router and compile.
 2. Connect a machine to the same router and run the exploit_poc.py script ( this is going to send command to the IoT device once it connects).
 3. Flash the firmware on the hardware device (STM32-NucleoF401RE board expanded with an X-NUCLEO-IDW01M1 Wi-Fi Module) using [st-link](https://github.com/stlink-org/stlink)
 4. Wait for the IoT device to connect to the machine and observe exploit.
