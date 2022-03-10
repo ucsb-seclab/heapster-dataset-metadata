@@ -1,10 +1,6 @@
 This is the code of the application flashed on the STM32-NucleoF401RE board (expanded with an
 X-NUCLEO-IDW01M1 Wi-Fi Module). 
-
-<p align="right">
-<a href=""> <img width="350"  src="imgs/hw.png"> </a>
-</p>
-
+<img align="right" width="350"  src="imgs/hw.png"> </a>
 
 The application has been compiled using [this online IDE](https://ide.mbed.com/compiler) which automatically selects the compilation toolchain (and therefore, all the linked libraries) to eventually generate the monolithic firmware image.
 
