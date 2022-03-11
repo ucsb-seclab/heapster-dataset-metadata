@@ -1,4 +1,4 @@
-# heapster-dataset-metadata
+# HEAPSTER-dataset-metadata
 Collection of metadata for the firmware images used in [Heapster](https://github.com/ucsb-seclab/heapster)
 
 * `fw-load-confs`: contains configuration file to load the firmware images in our dataset inside angr.
