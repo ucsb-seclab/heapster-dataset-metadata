@@ -7,13 +7,30 @@ This folder contains the code used to clusterize the HMLs discovered in our data
 
 # Usage
 
-1. Install the Heapster IDA loader plugin by dropping `scripts/ida_loader.py` in /ida/loaders/
-2. `/scripts/create_idbs.sh`
-   * This script generates the .idb and the file needed from BinDiff to perform the binary diffing.
-3. `python3 /scripts/compare_all.py` 
-   * This script does the binary comparison between ALL the functions of any pair of binary in ./firmware/
-   * It outputs n^2 number of sqlite databases containing these information
-4. `python3 /scripts/heap_similarity.py` 
-   * This script generates the similarity graph of the discovered HMLs
-5. `python3 /scripts/binary_similarity.py`
-   * This script generates the similarity graph using the whole firmware images 
+1. Install the Heapster IDA loader plugin by dropping `scripts/ida_loader.py` in your `/ida/loaders/` folder.
+2. Move firmware samples you want to classify in `./firmware`. The folder should be structured in the following way:
+   ```./firmware/
+               -> <FIRMWARE_NAME1.bin>
+                  -> /hb_analysis
+                     -> /hb_state.json 
+                  -> <FIRMWARE_NAME1.bin>
+               -> <FIRMWARE_NAME2.bin>
+                  -> /hb_analysis
+                     -> /hb_state.json 
+                  -> <FIRMWARE_NAME2.bin>
+               -> ...
+   ```
+2. Generates the .idb and the file needed from BinDiff to perform the binary diffing.
+   * `/scripts/create_idbs.sh`
+3. This script does the binary comparison between ALL the functions of any pair of blobs in `./firmware/`
+   It outputs n^2 number of SQLite databases containing the diffing information
+   * `python3 /scripts/compare_all.py` 
+4. Generate the similarity graph of the discovered HMLs
+   * `python3 /scripts/heap_similarity.py` 
+5. Generates the similarity graph considering the whole firmware images 
+   * `python3 /scripts/binary_similarity.py`
+
+
+# Extra
+
+In artifacts you can find the latest version of the graph as presented in the paper. You can use [Gephi](https://gephi.org/) to visualize it!
