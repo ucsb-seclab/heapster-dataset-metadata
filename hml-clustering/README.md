@@ -7,7 +7,7 @@ This folder contains the code used to clusterize the HMLs discovered in our data
 
 # Usage
 
-1. Install the IDA plugin in `scripts/ida_loader.py` by dropping the loader in /ida/loaders/
+1. Install the Heapster IDA loader plugin by dropping `scripts/ida_loader.py` in /ida/loaders/
 2. `/scripts/create_idbs.sh`
    * This script generates the .idb and the file needed from BinDiff to perform the binary diffing.
 3. `python3 /scripts/compare_all.py` 
