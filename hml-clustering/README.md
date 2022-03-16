@@ -34,4 +34,4 @@ This folder contains the code used to clusterize the HMLs discovered in our data
 
 # Extra
 
-In artifacts you can find the latest version of the graph as presented in the paper. You can use [Gephi](https://gephi.org/) to visualize it!
+In `./artifacts` you can find the latest version of the graph as presented in the paper. You can use [Gephi](https://gephi.org/) to visualize it!
