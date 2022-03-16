@@ -9,16 +9,17 @@ This folder contains the code used to clusterize the HMLs discovered in our data
 
 1. Install the Heapster IDA loader plugin by dropping `scripts/ida_loader.py` in your `/ida/loaders/` folder.
 2. Move firmware samples you want to classify in `./firmware`. The folder should be structured in the following way:
-   ```./firmware/
-               -> <FIRMWARE_NAME1.bin>
-                  -> /hb_analysis
-                     -> /hb_state.json 
-                  -> <FIRMWARE_NAME1.bin>
-               -> <FIRMWARE_NAME2.bin>
-                  -> /hb_analysis
-                     -> /hb_state.json 
-                  -> <FIRMWARE_NAME2.bin>
-               -> ...
+   ```
+   ./firmware/
+      -> <FIRMWARE_NAME1.bin>
+         -> /hb_analysis
+            -> /hb_state.json 
+         -> <FIRMWARE_NAME1.bin>
+      -> <FIRMWARE_NAME2.bin>
+         -> /hb_analysis
+            -> /hb_state.json 
+         -> <FIRMWARE_NAME2.bin>
+      -> ...
    ```
 2. Generates the .idb and the file needed from BinDiff to perform the binary diffing.
    * `/scripts/create_idbs.sh`
